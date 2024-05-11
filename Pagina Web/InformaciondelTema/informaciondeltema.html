@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/InformaciondelTema/css/style.css">
+  <title>Informacion Del Tema</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/image/Logo.png" alt="Universidad" width="80">
+    </div>
+    <div class="titulo">
+      <h1>Trabajo de Investigación Serverless</h1>
+    </div>
+  </header> 
+
+  <div class="campo">
+    <h2>Informacion del Tema</h2>
+    <h2>Arquitectura Serverless</h2>
+
+    <pre id="texto"></pre>
+    
+    <script>
+        // Función para cargar el archivo de texto
+        function cargarArchivo(url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    callback(xhr.responseText);
+                }
+            };
+            xhr.open("GET", url, true);
+            xhr.send();
+        }
+    
+        // Llamada a la función cargarArchivo con la ruta al archivo .txt
+        cargarArchivo('Texto.txt', function(texto) {
+            document.getElementById('texto').innerText = texto;
+        });
+    </script>
+    
+
+  <footer>
+    <a href="/index.html" class="url">www.trabajointegrador.com</a>
+    <p>&copy; 2024 Trabajo Integrador</p>
+  </footer>
+</body>
+</html>
