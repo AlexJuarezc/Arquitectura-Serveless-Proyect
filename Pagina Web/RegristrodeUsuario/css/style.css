@@ -33,21 +33,52 @@ header {
 
 .titulo h1 {
     margin: 0;
-    margin-right: 1025px;
+    margin-right: 821px;
     font-size: 25px;
 }
 
-.campo {
+.container{
+    background-color: rgba(0, 153, 255, 0.712);
+    width:35%;
+    margin: 41px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+h2{
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
-.campo h2 {
-    margin-top: 20px;
+.campo label{
+    font-size: large;
+    margin-left: 5%;
+    margin-top: 0,2%;
+    flex-basis: 80px;
+    flex: 1;
 }
-
-.campo input {
-    width: 15%;
-    margin-top: 5px;
+.campo input{
+    height: 20px;
+    width: 55%;
+    margin-right: 5%;
+}
+.campo{
+    display: flex;
+    margin: 7px 0px;
+}
+#boton{
+    width: 25%;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 36%;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -69,11 +100,6 @@ nav ul li a {
     background-color: rgb(0, 130, 252);
     border-radius: 10px;
     padding: 10px;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
 }
 
 footer {

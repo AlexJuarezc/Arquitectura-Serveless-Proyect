@@ -1,5 +1,4 @@
 body, header, footer {
-
     margin: 0;
     padding: 0;
 }
@@ -35,6 +34,7 @@ header{
     margin: 0;
     margin-right: 325px;
     font-size: 25px;
+    
 }
 
 nav ul {
@@ -42,6 +42,7 @@ nav ul {
     margin: 0;
     padding: 0;
     margin-right: 100px;
+    
 }
 
 nav ul li {
