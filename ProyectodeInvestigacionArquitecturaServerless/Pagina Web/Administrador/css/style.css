@@ -1,0 +1,96 @@
+body, header, footer {
+    margin: 0;
+    padding: 0;
+}
+
+body::after {
+    content: "";
+    background-image: url('/image/Fondo.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 153, 255);
+    padding: 10px;
+    color: #fff;
+}
+
+.logo img {
+    max-width: 80px;
+    height: auto;
+}
+
+.titulo h1 {
+    margin: 0;
+    margin-right: 285px;
+    font-size: 25px;
+}
+.campo {
+    
+    text-align: center; /* Centrar contenido */
+}
+.campo h2 {
+    font-size: 40px; /* Cambiar tamaño del título */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+nav{
+   
+    width: 40%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-right: 5px;
+    background-color: rgb(0, 130, 252);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+footer {
+    background-color: rgb(0, 153, 255);
+    color: aliceblue;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.url {
+    text-decoration: none;
+}
