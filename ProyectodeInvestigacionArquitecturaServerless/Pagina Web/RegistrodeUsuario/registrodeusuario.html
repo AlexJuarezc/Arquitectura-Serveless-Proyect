@@ -18,7 +18,7 @@
 
     <div class="container">
       <h2>Registro de Usuarios</h2>
-      <form id="form" action="/procesar_formulario.php" method="POST">
+      <form id="form" action="{{ url_for('registro_usuario') }}" method="post">
         <div class="campo">
           <label for="full_name">Nombre y Apellido</label>
           <input type="text" id="full_name" name="full_name" required/><br /><br />
