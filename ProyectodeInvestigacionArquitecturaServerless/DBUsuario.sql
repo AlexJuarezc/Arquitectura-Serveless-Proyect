@@ -1,7 +1,0 @@
-CREATE TABLE users (
-    id SERIAL PRIMARY KEY,
-    full_name VARCHAR(160) NOT NULL,
-    email VARCHAR(120) UNIQUE NOT NULL,
-    telefono VARCHAR(20),
-    dni VARCHAR(20) UNIQUE NOT NULL
-);

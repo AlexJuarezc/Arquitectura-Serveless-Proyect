@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Pagina Web/RegristrodeUsuario/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='RegistrodeUsuario/css/style.css') }}">
     <title>Registro De Usuario</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="/Pagina Web/image/Logo.png" alt="Universidad" width="80" />
+        <img src="{{ url_for('static', filename='image/Logo.png') }}" alt="Universidad" width="80" /> <!--url_for: Sirve para crear enlaces y redirecciones.-->
       </div>
       <div class="titulo">
         <h1>Trabajo de Investigacion Serverless</h1>
@@ -18,7 +18,7 @@
 
     <div class="container">
       <h2>Registro de Usuarios</h2>
-      <form id="form" action="/procesar_formulario.php" method="POST">
+      <form id="form" action="{{ url_for('registro_usuario') }}" method="post"> <!--url_for: Sirve para crear enlaces y redirecciones.-->
         <div class="campo">
           <label for="full_name">Nombre y Apellido</label>
           <input type="text" id="full_name" name="full_name" required/><br /><br />
@@ -43,8 +43,9 @@
     </div>
 
     <footer>
-      <a href="/index.html" class="url">www.trabajointegrador.com</a>
+      <a href="{{ url_for('index') }}" class="url">www.trabajointegrador.com</a> <!--url_for: Sirve para crear enlaces y redirecciones.-->
       <p>&copy; 2024 Trabajo Integrador</p>
     </footer>
   </body>
 </html>
+

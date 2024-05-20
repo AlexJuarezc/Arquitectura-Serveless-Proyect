@@ -19,31 +19,8 @@
   <div class="campo">
     <h2>Informacion del Tema</h2>
     <h2>Arquitectura Serverless</h2>
-
-    <pre id="texto"></pre>
-    
-    <script>
-        // Función para cargar el archivo de texto
-        function cargarArchivo(url, callback) {
-            var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    callback(xhr.responseText);
-                }
-            };
-            xhr.open("GET", url, true);
-            xhr.send();
-        }
-    
-        // Llamada a la función cargarArchivo con la ruta al archivo .txt
-        cargarArchivo('Texto.txt', function(texto) {
-            document.getElementById('texto').innerText = texto;
-        });
-    </script>
-    
-
   <footer>
-    <a href="/index.html" class="url">www.trabajointegrador.com</a>
+    <a href="{{ url_for('index')}}" class="url">www.trabajointegrador.com</a> <!--url_for: Sirve para crear enlaces y redirecciones.-->
     <p>&copy; 2024 Trabajo Integrador</p>
   </footer>
 </body>

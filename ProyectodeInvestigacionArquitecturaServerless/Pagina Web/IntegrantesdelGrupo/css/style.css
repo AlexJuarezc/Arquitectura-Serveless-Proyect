@@ -3,6 +3,12 @@ body, header, footer {
     padding: 0;
 }
 
+@font-face{
+    font-family: 'Fuente 1';
+    src: url('/Pagina Web/font/Arial%20Rounded%20MT%20Bold.ttf');
+}
+
+
 body::after {
     content: "";
     background-image: url('/image/Fondo.png');
@@ -33,14 +39,17 @@ header {
 
 .titulo h1 {
     margin: 0;
-    margin-right: 822px;
+    margin-right: 422px;
     font-size: 25px;
+    font-family: "Fuente 1";
 }
 .campo {
     text-align: center; /* Centrar contenido */
+
 }
 .campo h2 {
     font-size: 40px; /* Cambiar tamaño del título */
+    font-family: "Fuente 1";
 }
 
 .campo ul {
@@ -50,6 +59,7 @@ header {
 .campo li {
     font-size: 25px; /* Cambiar tamaño de los nombres */
     margin-bottom: 20px; /* Añadir separación entre nombres */
+    font-family: "Fuente 1";
 }
 nav ul {
     list-style-type: none;
@@ -86,8 +96,16 @@ footer {
     left: 0;
     right: 0;
     text-align: center;
+    font-family: "Fuente 1";
 }
 
 .url {
     text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.url:hover{
+    color: aqua;
+    transform: translateY(-5px);
 }
