@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='RegistrodeUsuario/css/style.css') }}">
+    <title>Registro De Usuario</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="{{ url_for('static', filename='image/Logo.png') }}" alt="Universidad" width="80" /> <!--url_for: Sirve para crear enlaces y redirecciones.-->
+      </div>
+      <div class="titulo">
+        <h1>Trabajo de Investigacion Serverless</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2>Registro de Usuarios</h2>
+<<<<<<< HEAD
+      <form id="form" action="{{ url_for('registro_usuario') }}" method="post"> <!--url_for: Sirve para crear enlaces y redirecciones.-->
+=======
+      <form id="form" action="{{ url_for('registro_usuario') }}" method="post">
+>>>>>>> 4b541d81d5e4ec02eb69bc01d0b582a545b3567b
+        <div class="campo">
+          <label for="full_name">Nombre y Apellido</label>
+          <input type="text" id="full_name" name="full_name" required/><br /><br />
+        </div>
+
+        <div class="campo">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Telefono</label>
+          <input type="number" id="telefono" name="telefono" required /><br /><br />
+        </div>
+
+        <div class="campo">
+          <label for="dni">D.N.I</label>
+          <input type="text" id="dni" name="dni" required /><br /><br />
+        </div>
+        <input type="submit" value="Registrar" id="boton" name="boton" />
+      </form>
+    </div>
+
+    <footer>
+      <a href="{{ url_for('index') }}" class="url">www.trabajointegrador.com</a> <!--url_for: Sirve para crear enlaces y redirecciones.-->
+      <p>&copy; 2024 Trabajo Integrador</p>
+    </footer>
+  </body>
+</html>
+
