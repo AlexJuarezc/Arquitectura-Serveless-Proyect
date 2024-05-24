@@ -27,7 +27,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(0, 153, 255);
+    background-color: rgb(0, 102, 255);
     padding: 10px;
     color: #fff;
 }
@@ -38,8 +38,8 @@ header {
 }
 
 .titulo h1 {
-    margin: 0;
-    margin-right: 422px;
+    margin: 10px;
+    margin-left: 485.5px;
     font-size: 25px;
     font-family: "Fuente 1";
 }
@@ -90,13 +90,10 @@ nav ul li a {
 }
 
 footer {
-    background-color: rgb(0, 153, 255);
+    background-color: rgb(0, 102, 255);
     color: aliceblue;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    padding: 10px 10px;
+    margin-top: 430px;
     text-align: center;
     font-family: "Fuente 1";
 }
