@@ -16,6 +16,35 @@
   <div class="campo">
     <h2>Informacion del Tema</h2>
     <h2>Arquitectura Serverless</h2>
+    <h3>Computación sin servidor</h3>
+
+    <p>La computación sin servidor (Serverless) es un modelo de ejecución en el que el proveedor en la nube es responsable de ejecutar un fragmento de código mediante la asignación dinámica de los recursos. El código se ejecuta dentro de contenedores sin estado que pueden ser activados por una variedad de eventos que incluyen solicitudes HTTP, eventos de base de datos, servicios de colas, alertas de monitoreo, carga de archivos y eventos programados. El código que se envía al proveedor en la nube para la ejecución es generalmente en forma de función. Por lo tanto, serverless se denomina “FaaS”.</p>
+
+    <h4>Function as a Service (FaaS)</h4>
+    <p>FaaS, o Function-as-a-Service, es un servicio de computación en la nube que permite a los clientes ejecutar código en respuesta a eventos, sin gestionar la infraestructura compleja típicamente asociada con la creación y el lanzamiento de microservicios de aplicaciones.</p>
+
+    <h4>Ventajas</h4>
+    <ul>
+        <li><strong>No hay necesidad de administrar infraestructura:</strong> No es necesario aprovisionar y administrar servidores, ni tampoco mantener los sistemas operativos o instalación y actualización de software. Todo es responsabilidad del proveedor de la nube.</li>
+        <li><strong>Escalabilidad:</strong> Se escala de forma automática y manteniendo un equilibrio en cuanto a recursos, esto indica que se adapta a las necesidades del cliente.</li>
+        <li><strong>Ahorro de costos:</strong> Solo se paga lo que se usa, en este caso se paga por el tiempo que dura la ejecución, en lugar de pagar por una instancia.</li>
+        <li><strong>Alta disponibilidad y tolerancia a fallas:</strong> Sin necesidad de hacer algún proceso para replicar datos en diferentes zonas de disponibilidad, los servidores sin servidor ofrecen alta disponibilidad y tolerancia a fallas de forma predeterminada.</li>
+    </ul>
+
+    <h4>Proveedores más conocidos son:</h4>
+    <ul>
+        <li>AWS Lambda</li>
+        <li>Google Cloud</li>
+        <li>Azure Functions</li>
+    </ul>
+
+    <h4>Ejemplo: AWS Lambda</h4>
+    <p>AWS Lambda es un servicio gestionado que permite ejecutar código sin necesidad de aprovisionar y administrar servidores. Lambda se encarga de toda la infraestructura, incluyendo el mantenimiento del servidor, el sistema operativo, el aprovisionamiento de capacidad, el escalado automático y las funciones de registro.</p>
+    <p>Los usuarios solo necesitan proporcionar su código en uno de los lenguajes compatibles con Lambda. Las funciones se organizan en "Funciones de Lambda", que se ejecutan únicamente cuando es necesario y se escalan automáticamente. Solo se paga por el tiempo de ejecución del código, sin costos adicionales cuando el código no se está ejecutando.</p>
+
+    <h4>Conclusión</h4>
+    <p class="conclusion">El uso de Serverless genera beneficios importantes, como dejar de preocuparse por aprovisionar servidores y administrar infraestructura, para concentrarse en el desarrollo de aplicaciones. Existen una variedad de servicios sin servidores para diferentes propósitos, pero que pueden integrarse entre sí para construir soluciones completas.</p>
+
   <footer>
     <a href="{{ url_for('index')}}" class="url">www.trabajointegrador.com</a> <!--url_for: Sirve para crear enlaces y redirecciones.-->
     <p>&copy; 2024 Trabajo Integrador</p>
