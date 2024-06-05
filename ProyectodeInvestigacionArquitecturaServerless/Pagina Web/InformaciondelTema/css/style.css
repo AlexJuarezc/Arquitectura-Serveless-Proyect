@@ -62,46 +62,6 @@ h2 {
     margin-bottom: 30px;
     font-family: "Fuente 1";
 }
-h3 {
-    font-size: 30px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: "Fuente 1";
-    text-decoration: underline;
-}
-h4 {
-    font-size: 30px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: "Fuente 1";
-    text-decoration: underline;
-}
-p {
-    font-size: 30px;
-    color: #333;
-    text-align: justify;
-    margin-bottom: 30px;
-    font-family: "Fuente 1";
-    padding-left: 200px; 
-    padding-right: 200px;
-}
-ul {
-    font-size: 30px;
-    color: #333;
-    text-align: justify;
-    margin-bottom: 30px;
-    font-family: "Fuente 1";
-    padding-left: 200px; 
-    padding-right: 200px;
-}
-li {
-    margin-bottom: 10px;
-}
-.conclusion {
-    font-weight: bold;
-}
 
 nav ul {
     list-style-type: none;

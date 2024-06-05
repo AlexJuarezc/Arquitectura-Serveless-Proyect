@@ -1,25 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory
-from flask_sqlalchemy import SQLAlchemy
+import requests
 import os
 
 app = Flask(__name__, template_folder='Pagina Web', static_folder='Pagina Web')
-
-# Configuración de la URI de la base de datos
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://app_user:Lan1852@localhost/DBUsuario'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
-
-# Definición del modelo de la base de datos
-class Users(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    full_name = db.Column(db.String(160), nullable=False)
-    email = db.Column(db.String(120), unique=True, nullable=False)
-    telefono = db.Column(db.String(20))
-    dni = db.Column(db.String(20), unique=True, nullable=False)
-
-# Crear todas las tablas
-with app.app_context():
-    db.create_all()
 
 @app.route('/')
 def index():
@@ -32,18 +15,16 @@ def registro_usuario():
         email = request.form['email']
         telefono = request.form['telefono']
         dni = request.form['dni']
-        
-        new_user = Users(full_name=full_name, email=email, telefono=telefono, dni=dni)
-        db.session.add(new_user)
-        db.session.commit()
+
+        datos = {'name' : full_name, 'email' : email, 'telefono' : telefono, 'dni':dni}         
+        r = requests.get('https://us-central1-skillful-camp-425502-s7.cloudfunctions.net/function-1', params=datos)
         
         return redirect(url_for('admin'))
     return render_template('RegistrodeUsuario/registrodeusuario.html')
 
 @app.route('/admin')
 def admin():
-    users = Users.query.all()
-    return render_template('Administrador/administrador.html', users=users)
+    return render_template('Administrador/administrador.html')
 
 @app.route('/informacion_del_tema')
 def informacion_del_tema():
